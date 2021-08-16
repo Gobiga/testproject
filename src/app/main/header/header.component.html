@@ -1,84 +1,24 @@
-<div class="header">
+<div class="navbar container">
     <a class="logo-link" [routerLink]="['/']">
         <img class="logo" alt="Love Energy Savings" src="assets/images/love-energy-savings-logo.png">
     </a>
-    <mat-sidenav-container>
-        <mat-sidenav  #sidenav role="navigation">
-            <mat-nav-list>
-                <a mat-list-item>
-                    <!-- <mat-icon class="icon">input</mat-icon> -->
-                    <span class="label">Business Energy</span>
-                </a>
-                <a mat-list-item>
-                    <!-- <mat-icon class="icon">home</mat-icon> -->
-                    <span class="label">Home Energy</span>
-                </a>
-                <a mat-list-item>
-                    <!-- <mat-icon class="icon">dashboard</mat-icon> -->
-                    <span class="label">Other Services</span>
-                </a>
-                <a mat-list-item>
-                    <!-- <mat-icon class="icon">dashboard</mat-icon> -->
-                    <span class="label">Content Hub</span>
-                </a>
-                <a mat-list-item>
-                    <!-- <mat-icon class="icon">dashboard</mat-icon> -->
-                    <span class="label">About Us</span>
-                </a>
-                
-            </mat-nav-list>
-        </mat-sidenav>
 
-        <mat-sidenav-content>
-            <mat-toolbar color="primary">
-                <div fxHide.gt-xs>
-                    <button mat-icon-button>
-                        <mat-icon>menu</mat-icon>
-                    </button>
-                </div>
-                <div>
-                    <a>
-                    Material Blog
-                    </a>
-                </div>
-                <div fxFlex fxLayout fxLayoutAlign="flex-end"  fxHide.xs>
-                    <ul fxLayout fxLayoutGap="20px" class="navigation-items">
-                        <li>
-                            <a>
-                            <!-- <mat-icon class="icon">input</mat-icon> -->
-                            <span  class="label">Business Energy</span>
-                            </a>
-                        </li>
-                        <li>
-                        <a >
-                            <!-- <mat-icon class="icon">home</mat-icon> -->
-                            <span class="label">Home Energy</span>
-                        </a>
-                        </li>
-                        <li>
-                            <a>
-                                <!-- <mat-icon class="icon">dashboard</mat-icon> -->
-                                <span class="label">Other Services</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                            <!-- <mat-icon class="icon">input</mat-icon> -->
-                                <span class="label">Content Hub</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a>
-                            <!-- <mat-icon class="icon">input</mat-icon> -->
-                                <span class="label">About Us</span>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                </mat-toolbar>
-            <main>
-            </main>
-        </mat-sidenav-content>
-    </mat-sidenav-container>
-
+<!-- Navbar -->
+    <nav>
+        <ul>
+            <li><a href="/">Business Energy</a></li>
+            <li><a href="/">Home Energy</a></li>
+            <li><a href="/">Other Services</a></li>
+            <li><a href="/">Content Hub</a></li>
+            <li><a href="/">About Us</a></li>
+        </ul>
+    </nav>
+    
+    <!-- contact numbe -->
+    <div class="contact-number">
+        <a href="tel:0800 9888 375">
+            <!-- <span class="call__call d--nD"><i class="fa-flip-horizontal fas fa-phone "></i></span> -->
+            <span>0800 9888 375</span>
+        </a>
+    </div>
 </div>

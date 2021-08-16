@@ -1,0 +1,28 @@
+:root{ 
+    --primary-color: #002684; 
+    --font-color: #8999b8;
+    --secondary-color: #ffffff;
+    --primary-green: #75c044;
+    --accent-success: #68f286;
+}
+
+html,body {
+    height:100%;
+    line-height: 1.6;
+}
+  
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
+}
+  
+ul {
+    list-style-type: none;
+}
+  
+a {
+    text-decoration: none;
+}

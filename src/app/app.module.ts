@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContentComponent } from './main/content/content.component';
 import { HeaderComponent } from './main/header/header.component';
+import { DescriptionComponent } from './main/description/description.component';
 
 
 
@@ -12,7 +13,8 @@ import { HeaderComponent } from './main/header/header.component';
   declarations: [
     AppComponent,
     ContentComponent,
-    HeaderComponent
+    HeaderComponent,
+    DescriptionComponent
   ],
   imports: [
     BrowserModule,

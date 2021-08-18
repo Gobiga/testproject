@@ -1,0 +1,113 @@
+@import 'variable';
+
+.showcase {
+    height: 400px;
+    background-image: linear-gradient( #f9f9f9 , #c8e2ec);
+    position: relative;
+ 
+    h1 {
+        font-size: $font-heading;
+        color: #1b7ced;
+    }
+  
+    .flex {
+        overflow: visible;
+        display: flex;
+    }
+  
+    .showcase-text {
+        flex: 1 1 70%;
+        margin: $padding-big $padding-bigger $padding-smallest 0;
+        animation: slideInFromLeft 1s ease-in;
+
+        p {
+            margin: $padding-smallest 0;
+            font-size: $font-default;
+        }
+    
+        .showcase-warning {
+            font-weight: bold;
+        }
+
+        .logo-container{
+            display: flex;
+            margin: $padding-big 0 0;
+            justify-content: flex-start;
+        }
+
+        .logo-link {
+            margin-right: auto;
+            height: 56%;
+            .water-savings-logo {
+                width: 40%;
+                height: 100%;
+            }
+            .trust-pilot-logo {
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+  
+    .showcase-form {
+        position: relative;
+        width: 370px;
+        z-index: 100;
+        justify-self: flex-end;
+        animation: slideInFromRight 1s ease-in;
+        background-color: #000044;
+        color: #333;
+        box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+        padding: $padding-big;
+        margin: 10px;
+        height: 100%;
+        
+
+        h2{
+            color: #fff;
+        }
+
+        .form-control {
+            margin: $padding-medium 0;
+        }
+    }
+    
+    
+    .showcase-form input[type='text'],
+    .showcase-form input[type='email'] {
+        border: 0;
+        border-radius: $padding-tiny;
+        width: 100%;
+        padding: $padding-smallest;
+        font-size: $font-medium;
+    }
+    
+    .showcase-form input:focus {
+        outline: none;
+    }
+
+    .btn{
+        width: 100%;
+        text-transform: uppercase;
+    }
+    
+    .disclaimer{
+        font-size: $font-small;
+        color: var(--font-color);
+        margin: $padding-smallest;
+    }
+    .showcase::before,
+    .showcase::after {
+        content: '';
+        position: absolute;
+        height: 100px;
+        bottom: -70px;
+        right: 0;
+        left: 0;
+        background: #fff;
+        transform: skewY(-3deg);
+        -webkit-transform: skewY(-3deg);
+        -moz-transform: skewY(-3deg);
+        -ms-transform: skewY(-3deg);
+    }
+}
